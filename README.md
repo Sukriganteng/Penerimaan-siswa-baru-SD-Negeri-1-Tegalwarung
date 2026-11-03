@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
-/* ===== 1. TEMA WARNA (ubah di sini) ===== */
+
 :root{
   --sky:#2f9bf0; --sky-d:#1673c4; --sun:#ffc933; --leaf:#3fbf72;
   --bg:#f4faff; --card:#ffffff; --text:#1d2b3a; --muted:#5d6f82; --line:#dbe8f3;
@@ -50,7 +50,6 @@ section{padding:64px 20px}
 .rv{opacity:0;transform:translateY(28px);transition:.7s}
 .rv.show{opacity:1;transform:none}
 
-/* ===== 2. NAVBAR ===== */
 header{position:fixed;top:0;left:0;right:0;z-index:50;background:var(--card);box-shadow:0 2px 14px rgba(0,0,0,.08);padding-top:env(safe-area-inset-top,0px)}
 nav{max-width:1080px;margin:auto;display:flex;align-items:center;justify-content:space-between;height:64px;padding:0 16px}
 .logo{font:800 1.05rem 'Poppins',sans-serif;color:var(--sky-d)}
@@ -63,7 +62,6 @@ nav{max-width:1080px;margin:auto;display:flex;align-items:center;justify-content
 .menu-open .links{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--card);padding:12px;box-shadow:var(--shadow)}
 @media(min-width:900px){.links{display:flex}#burger{display:none}}
 
-/* ===== 3. HERO ===== */
 #beranda{padding-top:calc(110px + env(safe-area-inset-top,0px));background:linear-gradient(180deg,#58b6ff,#2f9bf0 70%,var(--bg));color:#fff;text-align:center;position:relative;overflow:hidden}
 #beranda h1{font-size:clamp(1.8rem,6vw,3.2rem);text-shadow:0 3px 10px rgba(0,0,0,.2)}
 #beranda h1 b{color:var(--sun)}
@@ -78,7 +76,7 @@ nav{max-width:1080px;margin:auto;display:flex;align-items:center;justify-content
 .count small{font-weight:700;color:var(--muted)}
 .cd-label{margin-top:30px;font-weight:700}
 
-/* ===== 4. TENTANG & STATISTIK ===== */
+
 .two{grid-template-columns:1fr}
 .vm h3{margin-bottom:8px;color:var(--sky-d)}
 .vm ul{padding-left:20px}
@@ -165,8 +163,6 @@ footer a:hover{color:var(--sun)}
 </style>
 </head>
 <body>
-
-<!-- ===== KONFIGURASI: ganti data sekolah di blok <script> paling bawah (objek CONFIG) ===== -->
 
 <header>
   <nav>
